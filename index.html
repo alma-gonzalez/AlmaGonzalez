@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alma González — Cosmología | CosmoAlma</title>
+<meta name="description" content="Alma González, cosmóloga en la Universidad de Guanajuato. Materia y energía oscuras con el bosque Lyman-α de DESI y lentes gravitacionales con el Observatorio Rubin.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2300BABC'/%3E%3Ccircle cx='21' cy='12' r='12' fill='%23101717'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&amp;family=Inter:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#101717}
+a{color:#00BABC}a:hover{color:#F5F5F5}
+a:focus-visible,button:focus-visible{outline:2px solid #00BABC;outline-offset:2px}
+</style>
+<style>
+html{scroll-behavior:smooth}
+.lang-btn{min-height: 32px; min-width: 44px; padding: 0 12px; border: 0; border-radius: 9999px; background: transparent; color: #A9B8B8; font: 500 12px/16px Inter, system-ui, sans-serif; letter-spacing: 0.06em; cursor: pointer}
+.lang-btn[aria-pressed="true"]{min-height: 32px; min-width: 44px; padding: 0 12px; border: 0; border-radius: 9999px; background: #00BABC; color: #101717; font: 500 12px/16px Inter, system-ui, sans-serif; letter-spacing: 0.06em; cursor: pointer}
+</style>
+</head>
+<body>
+<div style="background: #101717; color: #F5F5F5; font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 16px; line-height: 26px; min-height: 100%">
+
+<header style="max-width: 1120px; margin: 0 auto; padding: 24px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="#top" style="font-family: Fraunces, Georgia, serif; font-size: 24px; line-height: 32px; color: #F5F5F5; text-decoration: none">CosmoAlma</a>
+<nav aria-label="{{t.navLabel}}" style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap">
+<a href="#lya" style="color: #A9B8B8; text-decoration: none; font-size: 14px">{{t.navResearch}}</a>
+<a href="#outreach" style="color: #A9B8B8; text-decoration: none; font-size: 14px">{{t.navOutreach}}</a>
+<a href="#training" style="color: #A9B8B8; text-decoration: none; font-size: 14px">{{t.navTraining}}</a>
+<a href="#contact" style="color: #A9B8B8; text-decoration: none; font-size: 14px">CV</a>
+<a href="#contact" style="color: #A9B8B8; text-decoration: none; font-size: 14px">{{t.navContact}}</a>
+<div role="group" aria-label="Idioma / Language" style="display: flex; border: 1px solid #A9B8B8; border-radius: 9999px; padding: 2px">
+<button type="button" id="lang-es" class="lang-btn" aria-pressed="true">ES</button><button type="button" id="lang-en" class="lang-btn" aria-pressed="false">EN</button>
+</div>
+</nav>
+</header>
+
+<section id="top" style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(44px, 7vw, 64px); line-height: 1.05; letter-spacing: -0.02em; color: #F5F5F5">{{t.heroName}}</h1>
+<p style="margin: 0; max-width: 34em; color: #A9B8B8; font-size: 18px; line-height: 28px; white-space: pre-line">{{t.heroBody}}</p>
+</div>
+<p style="margin: 0; padding-top: 20px; border-top: 1px solid #2E3A3A; max-width: 22em; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: clamp(24px, 3vw, 30px); line-height: 1.3; color: #00BABC">{{t.heroTitle}}</p>
+<div style="display: flex; gap: 16px; flex-wrap: wrap">
+<a href="#lya" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 12px; background: #00BABC; color: #101717; text-decoration: none; font-weight: 500">{{t.ctaPrimary}}</a>
+<a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 12px; border: 1px solid #A9B8B8; color: #F5F5F5; text-decoration: none; font-weight: 500">{{t.ctaSecondary}}</a>
+</div>
+</div>
+<div style="flex: 0 1 340px; display: flex; justify-content: center">
+<div style="position: relative; width: 300px; height: 300px">
+<div aria-hidden="true" style="position: absolute; inset: -14px; border: 1px solid #2E3A3A; border-radius: 9999px"></div>
+<div aria-hidden="true" style="position: absolute; right: 6px; top: 18px; width: 22px; height: 22px; border-radius: 9999px; background: #F5A05E; z-index: 1"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; bottom: 30px; width: 14px; height: 14px; border-radius: 9999px; background: #7AA7FF; z-index: 1"></div>
+<img src="assets/img/perfil.jpg" alt="{{t.photoAlt}}" width="300" height="300" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 9999px; border: 2px solid #00BABC; box-sizing: border-box; display: block">
+</div>
+</div>
+</section>
+
+<section style="background: #1B2424">
+<div style="max-width: 760px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 16px; text-align: center; align-items: center">
+
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 36px; line-height: 44px; letter-spacing: -0.01em">{{t.workTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.workIntro}}</p>
+</div>
+</section>
+
+<section id="lya">
+<div style="max-width: 1120px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 400px; min-width: 0">
+<svg viewBox="0 0 480 320" width="100%" role="img" aria-label="{{t.figLyaAlt}}" style="display: block">
+<rect x="0" y="0" width="480" height="320" rx="12" fill="#1B2424"></rect>
+<line x1="56" y1="72" x2="420" y2="72" stroke="#2E3A3A" stroke-width="2" stroke-dasharray="4 6"></line>
+<circle cx="436" cy="72" r="10" fill="#F5A05E"></circle>
+<circle cx="436" cy="72" r="18" fill="none" stroke="#F5A05E" stroke-width="1.5" opacity="0.5"></circle>
+<circle cx="44" cy="72" r="7" fill="#F5F5F5"></circle>
+<circle cx="77.9" cy="76.2" r="5.9" fill="#00BABC" opacity="0.38"></circle>
+<circle cx="102.4" cy="59.6" r="7.2" fill="#00BABC" opacity="0.58"></circle>
+<circle cx="118.4" cy="60.0" r="7.6" fill="#00BABC" opacity="0.39"></circle>
+<circle cx="145.1" cy="61.5" r="10.0" fill="#00BABC" opacity="0.45"></circle>
+<circle cx="169.5" cy="74.2" r="10.7" fill="#00BABC" opacity="0.53"></circle>
+<circle cx="195.7" cy="82.0" r="5.3" fill="#00BABC" opacity="0.48"></circle>
+<circle cx="207.7" cy="66.6" r="5.7" fill="#00BABC" opacity="0.72"></circle>
+<circle cx="230.2" cy="75.9" r="8.5" fill="#00BABC" opacity="0.52"></circle>
+<circle cx="256.6" cy="59.7" r="5.4" fill="#00BABC" opacity="0.44"></circle>
+<circle cx="280.2" cy="66.8" r="7.6" fill="#00BABC" opacity="0.61"></circle>
+<circle cx="299.4" cy="80.2" r="6.8" fill="#00BABC" opacity="0.66"></circle>
+<circle cx="318.9" cy="72.7" r="8.4" fill="#00BABC" opacity="0.74"></circle>
+<circle cx="346.8" cy="85.4" r="6.7" fill="#00BABC" opacity="0.40"></circle>
+<circle cx="365.0" cy="62.3" r="9.5" fill="#00BABC" opacity="0.57"></circle>
+<text x="436" y="112" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A9B8B8">{{t.figLyaQuasar}}</text>
+<text x="44" y="112" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A9B8B8">DESI</text>
+<line x1="56" y1="250" x2="424" y2="250" stroke="#2E3A3A" stroke-width="1.5"></line>
+<polyline points="56,196.0 57,201.2 58,201.7 59,197.2 60,199.0 61,202.2 62,199.9 63,196.1 64,201.3 65,201.7 66,197.1 67,199.1 68,202.2 69,199.8 70,196.3 71,201.7 72,203.2 73,201.3 74,209.5 75,222.1 76,231.5 77,238.0 78,246.0 79,241.5 80,225.9 81,216.8 82,210.8 83,203.1 84,197.6 85,201.7 86,201.6 87,196.7 88,199.4 89,202.2 90,199.5 91,196.6 92,201.5 93,201.5 94,196.6 95,199.7 96,203.0 97,202.0 98,203.3 99,215.8 100,226.7 101,233.3 102,243.8 103,245.8 104,234.7 105,220.4 106,214.5 107,207.2 108,198.5 109,200.4 110,202.4 111,199.5 112,197.7 113,204.1 114,207.8 115,210.3 116,224.8 117,238.8 118,243.3 119,240.7 120,237.3 121,225.1 122,209.3 123,205.8 124,204.4 125,199.7 126,197.3 127,201.8 128,201.2 129,196.0 130,200.0 131,202.2 132,198.9 133,197.3 134,201.8 135,201.1 136,195.9 137,200.1 138,202.5 139,200.0 140,200.9 141,210.6 142,218.7 143,225.1 144,240.2 145,246.0 146,240.3 147,229.1 148,221.6 149,211.2 150,199.9 151,201.7 152,202.6 153,198.7 154,197.6 155,201.9 156,200.9 157,195.5 158,200.3 159,202.1 160,198.5 161,197.8 162,202.1 163,201.6 164,197.7 165,206.5 166,215.4 167,222.5 168,233.6 169,245.7 170,244.8 171,231.7 172,225.3 173,215.9 174,204.7 175,200.4 176,202.7 177,200.9 178,195.2 179,200.6 180,202.0 181,198.2 182,198.0 183,202.0 184,200.7 185,195.0 186,200.6 187,202.0 188,198.2 189,198.7 190,203.9 191,205.7 192,206.8 193,222.6 194,235.8 195,240.8 196,242.9 197,240.4 198,227.5 199,210.9 200,208.4 201,205.4 202,200.7 203,203.7 204,213.7 205,222.2 206,228.9 207,243.6 208,246.0 209,236.2 210,225.7 211,217.9 212,207.9 213,198.4 214,201.9 215,202.2 216,197.7 217,198.6 218,202.1 219,200.3 220,195.6 221,201.0 222,201.9 223,197.8 224,199.8 225,205.4 226,208.4 227,212.6 228,229.5 229,241.2 230,242.3 231,240.9 232,234.6 233,220.7 234,206.5 235,205.7 236,203.4 237,197.8 238,199.0 239,202.2 240,200.0 241,195.9 242,201.2 243,201.7 244,197.2 245,199.0 246,202.2 247,199.9 248,196.1 249,201.4 250,202.4 251,199.3 252,204.9 253,215.1 254,223.4 255,231.5 256,244.9 257,245.9 258,233.9 259,224.5 260,216.5 261,206.4 262,198.8 263,202.1 264,201.8 265,196.9 266,199.3 267,202.2 268,199.7 269,196.4 270,201.4 271,201.6 272,196.8 273,199.7 274,203.3 275,202.9 276,204.8 277,218.4 278,230.0 279,236.0 280,244.4 281,244.2 282,231.9 283,217.2 284,212.2 285,206.0 286,198.1 287,200.0 288,202.3 289,199.4 290,196.8 291,201.6 292,201.6 293,197.2 294,202.2 295,208.8 296,213.5 297,222.1 298,238.4 299,245.5 300,239.9 301,235.2 302,225.9 303,212.2 304,202.9 305,203.9 306,202.0 307,196.3 308,199.9 309,202.2 310,199.1 311,197.2 312,202.1 313,202.7 314,200.2 315,209.9 316,221.6 317,230.3 318,238.6 319,246.0 320,241.4 321,225.5 322,217.9 323,211.1 324,202.5 325,198.6 326,202.1 327,201.2 328,195.8 329,200.1 330,202.1 331,198.8 332,197.5 333,201.8 334,201.0 335,195.7 336,200.2 337,202.1 338,198.7 339,197.6 340,202.3 341,202.6 342,200.2 343,211.2 344,222.8 345,230.7 346,238.5 347,244.0 348,235.8 349,217.7 350,187.9 351,185.6 352,182.8 353,179.5 354,175.9 355,172.1 356,168.1 357,164.1 358,160.5 359,157.4 360,155.0 361,153.4 362,152.9 363,153.4 364,154.8 365,157.1 366,160.1 367,163.7 368,167.4 369,171.3 370,174.9 371,178.3 372,181.2 373,183.7 374,185.6 375,187.0 376,188.0 377,188.6 378,188.8 379,188.7 380,188.5 381,188.0 382,187.5 383,186.9 384,186.2 385,185.6 386,185.0 387,184.4 388,183.9 389,183.5 390,183.2 391,183.1 392,183.0 393,183.1 394,183.2 395,183.5 396,183.9 397,184.4 398,185.0 399,185.7 400,186.3 401,187.1 402,187.8 403,188.5 404,189.2 405,189.9 406,190.6 407,191.2 408,191.7 409,192.3 410,192.7 411,193.1 412,193.4 413,193.7 414,194.0 415,194.2 416,194.4" fill="none" stroke="#B1F2EF" stroke-width="1.75" stroke-linejoin="round"></polyline>
+<text x="200" y="278" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#7AA7FF">{{t.figLyaForest}}</text>
+<text x="362" y="278" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#F5A05E">Lyman-α</text>
+<text x="56" y="306" font-family="Inter, sans-serif" font-size="11" fill="#A9B8B8">{{t.figLyaAxis}}</text>
+</svg>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #7AA7FF">{{t.lyaEyebrow}}</p>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: -0.01em">{{t.lyaTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.lyaBody}}</p>
+<a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">{{t.lyaLink}}</a>
+</div>
+</div>
+</section>
+
+<section id="lensing" style="background: #1B2424">
+<div style="max-width: 1120px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 400px; min-width: 0">
+<svg viewBox="0 0 480 320" width="100%" role="img" aria-label="{{t.figLensAlt}}" style="display: block">
+<rect x="0" y="0" width="480" height="320" rx="12" fill="#1B2424"></rect>
+<circle cx="22" cy="289" r="1" fill="#A9B8B8" opacity="0.33"></circle>
+<circle cx="111" cy="277" r="1" fill="#A9B8B8" opacity="0.63"></circle>
+<circle cx="106" cy="304" r="2" fill="#A9B8B8" opacity="0.41"></circle>
+<circle cx="453" cy="234" r="1" fill="#A9B8B8" opacity="0.46"></circle>
+<circle cx="26" cy="124" r="1" fill="#A9B8B8" opacity="0.40"></circle>
+<circle cx="391" cy="61" r="1.5" fill="#A9B8B8" opacity="0.54"></circle>
+<circle cx="202" cy="278" r="1" fill="#A9B8B8" opacity="0.53"></circle>
+<circle cx="413" cy="32" r="1" fill="#A9B8B8" opacity="0.47"></circle>
+<circle cx="52" cy="252" r="2" fill="#A9B8B8" opacity="0.40"></circle>
+<circle cx="84" cy="230" r="2" fill="#A9B8B8" opacity="0.34"></circle>
+<circle cx="449" cy="276" r="1" fill="#A9B8B8" opacity="0.42"></circle>
+<circle cx="449" cy="267" r="2" fill="#A9B8B8" opacity="0.33"></circle>
+<circle cx="401" cy="291" r="1" fill="#A9B8B8" opacity="0.46"></circle>
+<circle cx="444" cy="90" r="1" fill="#A9B8B8" opacity="0.58"></circle>
+<circle cx="42" cy="213" r="1" fill="#A9B8B8" opacity="0.57"></circle>
+<circle cx="374" cy="19" r="2" fill="#A9B8B8" opacity="0.44"></circle>
+<circle cx="357" cy="291" r="1" fill="#A9B8B8" opacity="0.49"></circle>
+<circle cx="161" cy="296" r="2" fill="#A9B8B8" opacity="0.34"></circle>
+<circle cx="451" cy="172" r="2" fill="#A9B8B8" opacity="0.68"></circle>
+<circle cx="419" cy="83" r="1.5" fill="#A9B8B8" opacity="0.45"></circle>
+<circle cx="463" cy="200" r="1.5" fill="#A9B8B8" opacity="0.35"></circle>
+<circle cx="157" cy="250" r="1" fill="#A9B8B8" opacity="0.57"></circle>
+<circle cx="366" cy="129" r="1" fill="#A9B8B8" opacity="0.68"></circle>
+<circle cx="360" cy="257" r="1" fill="#A9B8B8" opacity="0.55"></circle>
+<circle cx="240" cy="160" r="92" fill="none" stroke="#2E3A3A" stroke-width="1" stroke-dasharray="3 5"></circle>
+<path d="M 153.5 128.5 A 92 92 0 0 1 271.5 73.5" fill="none" stroke="#7AA7FF" stroke-width="8" stroke-linecap="round"></path>
+<path d="M 326.5 191.5 A 92 92 0 0 1 271.5 246.5" fill="none" stroke="#7AA7FF" stroke-width="6" stroke-linecap="round"></path>
+<path d="M 201.1 243.4 A 92 92 0 0 1 169.5 219.1" fill="none" stroke="#7AA7FF" stroke-width="4" stroke-linecap="round"></path>
+<circle cx="240" cy="160" r="34" fill="#F5A05E" opacity="0.25"></circle>
+<circle cx="240" cy="160" r="20" fill="#F5A05E" opacity="0.55"></circle>
+<circle cx="240" cy="160" r="9" fill="#F5A05E"></circle>
+<text x="24" y="300" font-family="Inter, sans-serif" font-size="12" fill="#A9B8B8">{{t.figLensCaption}}</text>
+</svg>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #00BABC">{{t.lensEyebrow}}</p>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: -0.01em">{{t.lensTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.lensBody}}</p>
+<a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">{{t.lensLink}}</a>
+</div>
+</div>
+</section>
+
+<section id="leadership">
+<div style="max-width: 1120px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 400px; min-width: 0">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><img src="assets/img/observatorio-rubin.jpg" alt="{{t.figNetAlt}}" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; max-height: 560px; object-fit: cover; object-position: center 40%; border-radius: 12px; display: block; background: #1B2424"><figcaption style="font-size: 14px; line-height: 22px; color: #A9B8B8">{{t.rubinCap}}</figcaption></figure>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #F5A05E">{{t.leadEyebrow}}</p>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: -0.01em">{{t.leadTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.leadBody}}</p>
+<a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">{{t.leadLink}}</a>
+</div>
+</div>
+</section>
+
+<section id="outreach" style="background: #1B2424">
+<div style="max-width: 1120px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 400px; min-width: 0">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><img src="assets/img/cielo-nocturno.jpg" alt="{{t.photoOutreach}}" loading="lazy" style="width: 100%; aspect-ratio: 4 / 5; max-height: 560px; object-fit: cover; object-position: center 55%; border-radius: 12px; display: block; background: #1B2424"><figcaption style="font-size: 14px; line-height: 22px; color: #A9B8B8">{{t.photoOutreachCap}}</figcaption></figure>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #7AA7FF">{{t.outEyebrow}}</p>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: -0.01em">{{t.outTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.outBody}}</p>
+<a href="wgap-2025.html" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">{{t.outLink}}</a>
+</div>
+</div>
+</section>
+
+<section id="training">
+<div style="max-width: 1120px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 400px; min-width: 0">
+<div role="img" aria-label="{{t.photoTraining}}" style="aspect-ratio: 3 / 2; width: 100%; border-radius: 12px; border: 1px dashed #A9B8B8; background: #1B2424; display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; text-align: center; color: #A9B8B8; font-size: 14px; line-height: 22px">{{t.photoTraining}}</div>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #00BABC">{{t.trainEyebrow}}</p>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 32px; line-height: 40px; letter-spacing: -0.01em">{{t.trainTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.trainBody}}</p>
+<a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">{{t.trainLink}}</a>
+</div>
+</div>
+</section>
+
+<section id="personal" style="background: #1B2424">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="max-width: 640px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #F5A05E">{{t.persEyebrow}}</p>
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 36px; line-height: 44px; letter-spacing: -0.01em">{{t.persTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; font-size: 17px; line-height: 28px">{{t.persIntro}}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<article style="background: #1B2424; border: 1px solid #2E3A3A; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="{{t.triPhoto}}" style="aspect-ratio: 4 / 3; width: 100%; border-bottom: 1px dashed #A9B8B8; display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; text-align: center; color: #A9B8B8; font-size: 14px; line-height: 22px">{{t.triPhoto}}</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 22c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2" stroke="#7AA7FF"></path><circle cx="9" cy="10" r="4" stroke="#00BABC"></circle><circle cx="23" cy="10" r="4" stroke="#00BABC"></circle><path d="M9 10l5-5h4l5 5" stroke="#00BABC"></path></svg>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 24px; line-height: 32px">{{t.triTitle}}</h3>
+<p style="margin: 0; color: #A9B8B8; font-size: 15px; line-height: 24px">{{t.triBody}}</p>
+</div>
+</article>
+<article style="background: #1B2424; border: 1px solid #2E3A3A; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="{{t.cookPhoto}}" style="aspect-ratio: 4 / 3; width: 100%; border-bottom: 1px dashed #A9B8B8; display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; text-align: center; color: #A9B8B8; font-size: 14px; line-height: 22px">{{t.cookPhoto}}</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" fill="none" stroke="#F5A05E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14h22v7a6 6 0 0 1-6 6H11a6 6 0 0 1-6-6z"></path><path d="M2 14h3M27 14h3"></path><path d="M12 9c0-2 2-2 2-4M18 9c0-2 2-2 2-4"></path></svg>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 24px; line-height: 32px">{{t.cookTitle}}</h3>
+<p style="margin: 0; color: #A9B8B8; font-size: 15px; line-height: 24px">{{t.cookBody}}</p>
+</div>
+</article>
+<article style="background: #1B2424; border: 1px solid #2E3A3A; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="{{t.dogsPhoto}}" style="aspect-ratio: 4 / 3; width: 100%; border-bottom: 1px dashed #A9B8B8; display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; text-align: center; color: #A9B8B8; font-size: 14px; line-height: 22px">{{t.dogsPhoto}}</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" fill="#00BABC"><ellipse cx="16" cy="21" rx="6" ry="5"></ellipse><circle cx="8" cy="13" r="2.6"></circle><circle cx="13" cy="8.5" r="2.6"></circle><circle cx="19" cy="8.5" r="2.6"></circle><circle cx="24" cy="13" r="2.6"></circle></svg>
+<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 24px; line-height: 32px">{{t.dogsTitle}}</h3>
+<p style="margin: 0; color: #A9B8B8; font-size: 15px; line-height: 24px">{{t.dogsBody}}</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<footer id="contact" style="border-top: 1px solid #2E3A3A">
+<div style="max-width: 1120px; margin: 0 auto; padding: 80px 24px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px">
+<div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; font-size: 36px; line-height: 44px">{{t.contactTitle}}</h2>
+<p style="margin: 0; color: #A9B8B8; max-width: 30em">{{t.contactBody}}</p>
+<a href="mailto:gonzalez.alma@ugto.mx" style="font-size: 18px; line-height: 28px">gonzalez.alma@ugto.mx</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+<a href="#" style="color: #A9B8B8">[INSPIRE-HEP]</a>
+<a href="#" style="color: #A9B8B8">[ORCID]</a>
+<a href="#" style="color: #A9B8B8">[GitHub]</a>
+<a href="https://www.instagram.com/alxogm/" target="_blank" rel="noopener" style="color: #A9B8B8">Instagram @alxogm</a>
+<a href="#" style="color: #A9B8B8">{{t.cvLink}}</a>
+</div>
+</div>
+<p style="max-width: 1120px; margin: 0 auto; padding: 0 24px 40px; font-size: 12px; line-height: 16px; color: #A9B8B8">© 2026 CosmoAlma</p>
+</footer>
+
+</div>
+<script>
+window.COPY = {
+      es: {
+        pageTitle: 'Alma González — Cosmología | CosmoAlma',
+        navLabel: 'Principal', navResearch: 'Investigación', navOutreach: 'Divulgación', navTraining: 'Formación', navContact: 'Contacto',
+        eyebrow: 'Bosque Lyman-α · DESI  /  Lentes gravitacionales · Rubin',
+        heroTitle: 'Descifrando la materia y la energía oscura del Universo',
+        heroName: 'Alma González',
+        heroBody: 'Profesora Investigadora de Tiempo Completo en la División de Ciencias e Ingenierías, Universidad de Guanajuato.\nDoctora en Ciencias Físicas — Cosmología',
+        ctaPrimary: 'Ver investigación', ctaSecondary: 'Contacto',
+        photoAlt: 'Retrato de Alma González',
+        workEyebrow: 'Áreas de trabajo', workTitle: 'Investigación, gestión, divulgación y formación',
+        workIntro: 'Cerca del 95% del contenido del Universo no lo podemos ver directamente. Mi trabajo consiste en investigarlo con los mapas del cielo más grandes que se han hecho, y en formar y conectar a la comunidad que los analiza.',
+        lyaEyebrow: 'DESI · Bosque Lyman-α', lyaTitle: 'Leer la historia del Universo en la luz de los cuásares',
+        lyaBody: 'Antes de llegar a nosotros, la luz de un cuásar lejano atraviesa nubes de hidrógeno. Cada "nube" deja una huella en su espectro, y juntas forman un “bosque” de líneas. Con cientos de miles de estos espectros de DESI medimos cómo se distribuye la materia oscura y cómo se ha expandido el Universo.',
+        lyaLink: 'Cómo lo medimos →',
+        figLyaAlt: 'Esquema: la luz de un cuásar atraviesa nubes de hidrógeno antes de llegar a DESI; cada nube produce una línea de absorción en el espectro, a la izquierda del pico Lyman-α.',
+        figLyaQuasar: 'Cuásar', figLyaForest: 'Bosque Lyman-α', figLyaAxis: 'Longitud de onda →',
+        lensEyebrow: 'Rubin · Lentes gravitacionales', lensTitle: 'Usar la gravedad como lupa',
+        lensBody: 'Una galaxia masiva curva la luz proveniente de lo que está detrás y la convierte en arcos y anillos. El Observatorio Vera C. Rubin encontrará miles de estos sistemas. Con ellos podemos medir la materia oscura que no emite luz.',
+        lensLink: 'Conocer el proyecto →',
+        figLensAlt: 'Esquema de una lente gravitacional fuerte: una galaxia al centro y arcos de luz de una galaxia de fondo a su alrededor.',
+        figLensCaption: 'Galaxia lente y arcos de una fuente de fondo',
+        leadEyebrow: 'Gestión y colaboración', leadTitle: 'Abrir camino a México en las grandes colaboraciones',
+        leadBody: 'La cosmología actual se hace en equipos de cientos de personas. He coordinado análisis y participado en multiples comités en DESI, y co-fundé LSST-MX para que la comunidad mexicana tenga acceso a los datos del Observatorio Vera C. Rubin y un lugar en las decisiones. ',
+        leadLink: 'Ver LSST-MX y colaboraciones →',
+        figNetAlt: 'Alma González frente al edificio del telescopio del Observatorio Vera C. Rubin.', rubinCap: 'En el Observatorio Vera C. Rubin, Cerro Pachón, Chile.',
+        outEyebrow: 'Comunicación pública de la ciencia', outTitle: 'La cosmología también es para el público',
+        outBody: 'Impulso eventos públicos y programas para niñas y mujeres en la ciencia a nivel estatal, nacional e internacional: de bibliotecas y planetarios a museos y escuelas. Desarrollo nuevos materiales para aprender jugando.',
+        outLink: 'Conoce el proyecto WGAP 2025 →',
+        photoOutreach: 'Alma González mira el cielo nocturno; detrás se ven la Vía Láctea y las Nubes de Magallanes.', photoOutreachCap: 'Bajo la Vía Láctea y las Nubes de Magallanes.',
+        trainEyebrow: 'Docencia y mentoría', trainTitle: 'Formar a la siguiente generación',
+        trainBody: 'Dirijo estudiantes de licenciatura, maestría y doctorado, y desde 2018 organizo la Escuela Mexicana de AstroCosmoStatistics. Si te interesa hacer tu tesis en cosmología, conoce los proyectos abiertos.',
+        trainLink: 'Oportunidades para estudiantes →',
+        photoTraining: '[Foto con tu grupo de estudiantes o de la Escuela AstroCosmoStatistics]',
+        persEyebrow: 'Fuera de la investigación', persTitle: 'Lo que hago cuando no estoy analizando datos',
+        persIntro: 'Mis aficiones han cambiado con los años. Hoy mi tiempo libre se reparte entre estas tres.',
+        triTitle: 'Triatlón', triBody: 'Entrenar tres disciplinas pide la misma constancia que un proyecto de varios años. Actualmente hago la  distancia olímpica: 1.5 km de natación, 40 km de bicicleta y 10 km de carrera, y espero en un futuro ir al siguiente nivel. ',
+        triPhoto: '[Foto: en una competencia]',
+        cookTitle: 'Cocina', cookBody: 'Cocinar es mi forma de desconectarme y de reunir a la gente alrededor de la mesa. [Tu platillo favorito o especialidad.]',
+        cookPhoto: '[Foto: un platillo tuyo]',
+        dogsTitle: 'Pancho, Hypa y Planck', dogsBody: 'Pancho e Hypa me acompañan todos los días. Planck ya no está, pero sigue en esta historia...',
+        dogsPhoto: '[Foto: Pancho e Hypa, y un recuerdo de Planck]',
+        contactTitle: 'Contacto', contactBody: 'Para colaboraciones, charlas o supervisión de estudiantes, escríbeme directamente.',
+        cvLink: 'CV completo (PDF)'
+      },
+      en: {
+        pageTitle: 'Alma González — Cosmology | CosmoAlma',
+        navLabel: 'Main', navResearch: 'Research', navOutreach: 'Outreach', navTraining: 'Training', navContact: 'Contact',
+        eyebrow: 'Lyman-α forest · DESI  /  Gravitational lensing · Rubin',
+        heroTitle: 'Decoding the dark matter and dark energy of the Universe',
+        heroName: 'Alma González',
+        heroBody: 'Full-time Research Professor in the Division of Sciences and Engineering, University of Guanajuato.\nPhD in Physical Sciences — Cosmology',
+        ctaPrimary: 'View research', ctaSecondary: 'Contact',
+        photoAlt: 'Portrait of Alma González',
+        workEyebrow: 'Areas of work', workTitle: 'Research, leadership, outreach and training',
+        workIntro: 'About 95% of the Universe cannot be seen directly. My work is to investigate it with the largest maps of the sky ever made, and to train and connect the community that analyses them.',
+        lyaEyebrow: 'DESI · Lyman-α forest', lyaTitle: 'Reading the history of the Universe in quasar light',
+        lyaBody: 'Before it reaches us, light from a distant quasar passes through clouds of hydrogen. Each cloud leaves a mark in its spectrum, and together they form a “forest” of lines. With hundreds of thousands of these DESI spectra we measure how dark matter is distributed and how the Universe has expanded.',
+        lyaLink: 'How we measure it →',
+        figLyaAlt: 'Diagram: light from a quasar passes through hydrogen clouds before reaching DESI; each cloud produces an absorption line in the spectrum, to the left of the Lyman-α peak.',
+        figLyaQuasar: 'Quasar', figLyaForest: 'Lyman-α forest', figLyaAxis: 'Wavelength →',
+        lensEyebrow: 'Rubin · Gravitational lensing', lensTitle: 'Using gravity as a magnifying glass',
+        lensBody: 'A massive galaxy bends the light of whatever lies behind it into arcs and rings. The Vera C. Rubin Observatory will find thousands of these systems. With them we can measure the dark matter that emits no light.',
+        lensLink: 'About the project →',
+        figLensAlt: 'Diagram of a strong gravitational lens: a galaxy at the centre with arcs of light from a background galaxy around it.',
+        figLensCaption: 'Lens galaxy and arcs from a background source',
+        leadEyebrow: 'Leadership and collaboration', leadTitle: 'Opening the way for Mexico in large collaborations',
+        leadBody: 'Cosmology today is done in teams of hundreds of people. I have coordinated analyses in DESI and co-founded LSST-MX so that the Mexican community has access to Rubin data and a voice in its decisions.',
+        leadLink: 'LSST-MX and collaborations →',
+        figNetAlt: 'Alma González in front of the Vera C. Rubin Observatory telescope building.', rubinCap: 'At the Vera C. Rubin Observatory, Cerro Pachón, Chile.',
+        outEyebrow: 'Public communication of science', outTitle: 'Cosmology is for everyone',
+        outBody: 'I lead public events and programs for girls and women in science at state, national and international level: from libraries and planetariums to museums and schools.',
+        outLink: 'Explore the WGAP 2025 project →',
+        photoOutreach: 'Alma González looks up at the night sky, with the Milky Way and the Magellanic Clouds behind her.', photoOutreachCap: 'Under the Milky Way and the Magellanic Clouds.',
+        trainEyebrow: 'Teaching and mentoring', trainTitle: 'Training the next generation',
+        trainBody: 'I supervise undergraduate, master’s and PhD students, and since 2018 I have organized the Mexican School of AstroCosmoStatistics. If you want to do your thesis in cosmology, see the open projects.',
+        trainLink: 'Opportunities for students →',
+        photoTraining: '[Photo with your student group or the AstroCosmoStatistics School]',
+        persEyebrow: 'Beyond research', persTitle: 'What I do when I am not analysing data',
+        persIntro: 'My hobbies have changed over the years. These days my free time goes to these three.',
+        triTitle: 'Triathlon', triBody: 'I race the Olympic distance: 1.5 km swim, 40 km bike and 10 km run. Training for three disciplines takes the same consistency as a multi-year project.',
+        triPhoto: '[Photo: at a race]',
+        cookTitle: 'Cooking', cookBody: 'Cooking is how I switch off and bring people together around the table. [Your favourite dish or speciality.]',
+        cookPhoto: '[Photo: one of your dishes]',
+        dogsTitle: 'Pancho, Hypa and Planck', dogsBody: 'Pancho and Hypa keep me company every day. Planck is no longer with us, but he is still part of this story: a cosmologist’s dog could not have had any other name.',
+        dogsPhoto: '[Photo: Pancho and Hypa, and a memory of Planck]',
+        contactTitle: 'Contact', contactBody: 'For collaborations, talks or student supervision, write to me directly.',
+        cvLink: 'Full CV (PDF)'
+      }
+    };
+</script>
+<script src="assets/i18n.js"></script>
+</body>
+</html>
